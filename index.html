@@ -7,13 +7,11 @@
   <style>
     /* Bauhaus Typography - Geometric Sans */
     @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&display=swap');
-    
     * {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
     }
-    
     body {
       font-family: 'Montserrat', sans-serif;
       background: white;
@@ -22,12 +20,10 @@
       padding: 20px;
       min-height: 100vh;
     }
-    
     .container {
       max-width: 900px;
       margin: 0 auto;
     }
-    
     /* Bauhaus Color Palette */
     :root {
       --bauhaus-red: #d90000;
@@ -37,14 +33,12 @@
       --bauhaus-white: #ffffff;
       --bauhaus-gray: #f0f0f0;
     }
-    
     header {
       text-align: center;
       margin-bottom: 30px;
       padding: 30px 0;
       border-bottom: 3px solid var(--bauhaus-black);
     }
-    
     .logo-container {
       display: flex;
       justify-content: center;
@@ -52,13 +46,11 @@
       gap: 15px;
       margin-bottom: 15px;
     }
-    
     .hausai-logo {
       width: 80px;
       height: 80px;
       position: relative;
     }
-    
     h1 {
       font-size: 2.8rem;
       font-weight: 700;
@@ -66,7 +58,6 @@
       text-transform: uppercase;
       color: var(--bauhaus-black);
     }
-    
     .subtitle {
       font-size: 1.1rem;
       font-weight: 300;
@@ -75,13 +66,11 @@
       margin: 0 auto;
       line-height: 1.6;
     }
-    
     .main-content {
       display: grid;
       grid-template-columns: 1fr;
       gap: 30px;
     }
-    
     .chat-container {
       background: var(--bauhaus-white);
       border: 3px solid var(--bauhaus-black);
@@ -90,14 +79,12 @@
       display: flex;
       flex-direction: column;
     }
-    
     .messages {
       flex: 1;
       overflow-y: auto;
       padding-bottom: 20px;
       margin-bottom: 20px;
     }
-    
     .message {
       margin-bottom: 20px;
       padding: 15px;
@@ -108,13 +95,11 @@
       display: flex;
       gap: 15px;
     }
-    
     .message.bauai {
       background: var(--bauhaus-white);
       margin-right: auto;
       align-items: flex-start;
     }
-    
     .message.user {
       background: var(--bauhaus-black);
       color: var(--bauhaus-white);
@@ -123,22 +108,18 @@
       flex-direction: row-reverse;
       align-items: flex-start;
     }
-    
     .avatar-container {
       width: 50px;
       height: 50px;
       position: relative;
     }
-    
     .message-content {
       flex: 1;
     }
-    
     .input-area {
       display: flex;
       gap: 15px;
     }
-    
     input {
       flex: 1;
       padding: 15px;
@@ -147,12 +128,10 @@
       font-size: 16px;
       font-weight: 400;
     }
-    
     input:focus {
       outline: none;
       border-color: var(--bauhaus-red);
     }
-    
     button {
       background: var(--bauhaus-black);
       color: var(--bauhaus-white);
@@ -165,12 +144,10 @@
       cursor: pointer;
       letter-spacing: 1px;
     }
-    
     button:hover {
       background: var(--bauhaus-white);
       color: var(--bauhaus-black);
     }
-    
     /* Diagrama SVG */
     .diagram-container {
       text-align: center;
@@ -179,7 +156,6 @@
       border: 2px solid var(--bauhaus-black);
       background: var(--bauhaus-white);
     }
-    
     .diagram-title {
       font-weight: 700;
       text-transform: uppercase;
@@ -187,24 +163,20 @@
       margin-bottom: 15px;
       font-size: 1.1rem;
     }
-    
     .bauhaus-diagram {
       max-width: 300px;
       height: auto;
       margin: 0 auto;
     }
-    
     /* Bauhaus Construction Steps */
     .construction-result {
       margin-top: 20px;
       padding-top: 20px;
       border-top: 2px solid var(--bauhaus-black);
     }
-    
     .steps-container {
       margin-top: 20px;
     }
-    
     .step {
       display: flex;
       gap: 15px;
@@ -212,13 +184,11 @@
       padding-bottom: 15px;
       border-bottom: 1px solid var(--bauhaus-gray);
     }
-    
     .step:last-child {
       border-bottom: none;
       margin-bottom: 0;
       padding-bottom: 0;
     }
-    
     .step-number {
       min-width: 28px;
       height: 28px;
@@ -230,7 +200,6 @@
       font-weight: 700;
       font-size: 16px;
     }
-    
     .step-content h4 {
       font-size: 1.1rem;
       font-weight: 700;
@@ -238,30 +207,25 @@
       text-transform: uppercase;
       letter-spacing: 0.5px;
     }
-    
     .step-content p {
       font-weight: 300;
       font-size: 0.95rem;
     }
-    
     .materials-list {
       padding-left: 25px;
       margin: 15px 0;
     }
-    
     .materials-list li {
       margin-bottom: 8px;
       font-weight: 300;
       position: relative;
     }
-    
     .materials-list li:before {
       content: "—";
       position: absolute;
       left: -20px;
       color: var(--bauhaus-black);
     }
-    
     .note {
       margin-top: 20px;
       padding-top: 20px;
@@ -270,7 +234,6 @@
       font-weight: 300;
       font-size: 0.9rem;
     }
-    
     footer {
       text-align: center;
       margin-top: 40px;
@@ -279,7 +242,6 @@
       font-weight: 300;
       color: var(--bauhaus-black);
     }
-    
     /* Bauhaus Grid Pattern */
     .grid-pattern {
       position: fixed;
@@ -295,6 +257,12 @@
       pointer-events: none;
       z-index: -1;
     }
+    /* Mensaje de seguridad */
+    .safety-message {
+      background: #fff5f5;
+      border-color: #fed7d7;
+      color: #c53030;
+    }
   </style>
 </head>
 <body>
@@ -306,50 +274,37 @@
         <svg class="hausai-logo" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
           <!-- Fondo negro -->
           <circle cx="50" cy="50" r="50" fill="black"/>
-          
           <!-- Círculo blanco exterior -->
           <circle cx="50" cy="50" r="48" fill="white" stroke="black" stroke-width="2"/>
-          
           <!-- Parte inferior negra -->
           <rect x="2" y="60" width="96" height="38" fill="black"/>
-          
           <!-- Elementos geométricos -->
           <!-- Líneas diagonales izquierda -->
           <line x1="10" y1="20" x2="25" y2="35" stroke="black" stroke-width="2"/>
           <line x1="12" y1="22" x2="27" y2="37" stroke="black" stroke-width="2"/>
           <line x1="14" y1="24" x2="29" y2="39" stroke="black" stroke-width="2"/>
-          
           <!-- Línea vertical central -->
           <line x1="50" y1="10" x2="50" y2="60" stroke="black" stroke-width="2"/>
-          
           <!-- Círculo negro en la parte superior derecha -->
           <circle cx="70" cy="20" r="5" fill="black"/>
-          
           <!-- Círculo negro en la parte media izquierda -->
           <circle cx="30" cy="35" r="5" fill="black"/>
-          
           <!-- Semicírculo azul en la parte inferior izquierda -->
           <path d="M20,60 A30,30 0 0,1 50,60 L50,90 L20,90 Z" fill="#0057b8"/>
-          
           <!-- Semicírculo rojo en el centro -->
           <path d="M50,60 A30,30 0 0,1 80,60 L80,90 L50,90 Z" fill="#d90000"/>
-          
           <!-- Semicírculo amarillo en la parte derecha -->
           <path d="M80,10 A30,30 0 0,1 80,60 L80,90 L100,90 L100,10 Z" fill="#ffd700"/>
-          
           <!-- Círculo rojo dentro del azul -->
           <circle cx="35" cy="75" r="10" fill="#d90000"/>
-          
           <!-- Líneas horizontales en el semicírculo rojo -->
           <line x1="55" y1="40" x2="75" y2="40" stroke="black" stroke-width="2"/>
           <line x1="55" y1="45" x2="75" y2="45" stroke="black" stroke-width="2"/>
           <line x1="55" y1="50" x2="75" y2="50" stroke="black" stroke-width="2"/>
-          
           <!-- Líneas horizontales en el semicírculo amarillo -->
           <line x1="85" y1="25" x2="95" y2="25" stroke="black" stroke-width="2"/>
           <line x1="85" y1="30" x2="95" y2="30" stroke="black" stroke-width="2"/>
           <line x1="85" y1="35" x2="95" y2="35" stroke="black" stroke-width="2"/>
-          
           <!-- Arco en la parte inferior derecha -->
           <path d="M80,80 Q90,75 100,80" fill="none" stroke="black" stroke-width="2"/>
         </svg>
@@ -357,44 +312,88 @@
       <h1>Haus.AI</h1>
       <p class="subtitle">Inteligencia artificial funcional. Solo lo esencial para que funcione.</p>
     </header>
-
     <div class="main-content">
       <div class="chat-container">
         <div class="messages" id="messages">
           <!-- Los mensajes se generarán aquí -->
         </div>
-        
         <div class="input-area">
           <input 
             type="text" 
             id="userInput" 
-            placeholder="Ej: mesa, carro, silla, casa, robot, etc..."
+            placeholder="Ej: nevera, bicicleta, sofá, puerta, cama, caja..."
             autocomplete="off"
           >
           <button id="sendBtn" onclick="sendMessage()">Enviar</button>
         </div>
       </div>
     </div>
-
     <footer>
       <p>HAUS.AI • Form follows function • Sin límites</p>
     </footer>
   </div>
-
   <script>
-    // Base de conocimiento dinámico - genera respuestas para cualquier producto
+    // Lista de palabras clave para detectar solicitudes peligrosas
+    const dangerousKeywords = [
+      'arma', 'pistola', 'rifle', 'fusil', 'escopeta', 'revólver', 'cañón',
+      'bomba', 'explosivo', 'dinamita', 'c4', 'nitroglicerina', 'detonador',
+      'cuchillo', 'navaja', 'puñal', 'daga', 'espada', 'lanza',
+      'arma blanca', 'arma de fuego', 'arma letal', 'arma mortal',
+      'veneno', 'tóxico', 'químico peligroso', 'acido', 'explosión',
+      'armamento', 'municion', 'bala', 'proyectil', 'granada',
+      'matanzas', 'daño', 'lastimar', 'herir', 'matar', 'asesinar'
+    ];
+
+    // Función para verificar si el mensaje contiene palabras peligrosas
+    function isDangerousRequest(input) {
+      const normalized = input.toLowerCase();
+      return dangerousKeywords.some(keyword => normalized.includes(keyword));
+    }
+
+    // Base de conocimiento con todos los objetos solicitados
     const knowledgeBase = {
-      // Productos predefinidos para ejemplos
-      "mesa": {
+      "avión de papel": {
         materials: [
-          "Superficie plana rígida (madera contrachapada)",
-          "Cuatro patas de sección cuadrada (madera o metal)",
-          "Conectores estructurales (tornillos de acero)"
+          "Una hoja de papel A4 (210 x 297 mm)",
+          "Superficie plana para doblar"
         ],
         steps: [
           {
-            title: "Cortar superficie",
-            description: "Cortar una lámina rígida al tamaño funcional requerido. La superficie debe ser plana y resistente."
+            title: "Doblar a la mitad",
+            description: "Dobla la hoja A4 a lo largo, uniendo los bordes largos para crear una línea central."
+          },
+          {
+            title: "Formar triángulo superior",
+            description: "Dobla las esquinas superiores hacia la línea central para formar un triángulo en la parte superior."
+          },
+          {
+            title: "Doblar alas",
+            description: "Dobla los lados hacia abajo siguiendo la línea central, dejando una pequeña sección en la parte inferior para el agarre."
+          },
+          {
+            title: "Crear alas finales",
+            description: "Dobla cada lado hacia abajo nuevamente para formar las alas finales del avión."
+          }
+        ],
+        note: "Diseño funcional para vuelo básico. Sin decoraciones ni colores.",
+        diagram: `<svg viewBox="0 0 200 200" class="bauhaus-diagram" xmlns="http://www.w3.org/2000/svg">
+          <!-- Cuerpo del avión -->
+          <polygon points="50,100 100,60 150,100 100,110" fill="none" stroke="black" stroke-width="2"/>
+          <!-- Alas -->
+          <line x1="70" y1="95" x2="130" y2="95" stroke="black" stroke-width="2"/>
+          <line x1="60" y1="105" x2="140" y2="105" stroke="black" stroke-width="2"/>
+        </svg>`
+      },
+      "mesa": {
+        materials: [
+          "Superficie plana rígida (madera contrachapada, plástico duro o metal)",
+          "Cuatro patas de igual longitud (madera, metal o tubo plástico rígido)",
+          "Conectores estructurales (tornillos, clavos o adhesivo fuerte)"
+        ],
+        steps: [
+          {
+            title: "Preparar superficie",
+            description: "Cortar o seleccionar una superficie plana del tamaño y material apropiados para la función requerida."
           },
           {
             title: "Preparar patas",
@@ -416,96 +415,49 @@
           <rect x="162" y="52" width="8" height="100" fill="none" stroke="black" stroke-width="2"/>
         </svg>`
       },
-      "carro": {
+      "nevera": {
         materials: [
-          "Chasis rectangular (perfil metálico soldado)",
-          "Cuatro ruedas con neumáticos básicos",
-          "Eje de dirección (barra metálica con pivote)",
-          "Motor eléctrico mínimo (250W)",
-          "Sistema de freno mecánico",
-          "Asiento plano (lámina metálica)"
+          "Recipiente aislante (caja de espuma, recipiente metálico con aislamiento)",
+          "Fuente de frío (hielo, acumuladores de frío o sistema de enfriamiento básico)",
+          "Cierre hermético (tapa o puerta que mantenga el frío)",
+          "Estantes internos (opcional para organización funcional)"
         ],
         steps: [
           {
-            title: "Construir chasis",
-            description: "Soldar perfiles metálicos en forma rectangular para crear la estructura portante básica."
+            title: "Preparar contenedor",
+            description: "Seleccionar un recipiente con propiedades aislantes para mantener temperaturas bajas."
           },
           {
-            title: "Instalar sistema de ruedas",
-            description: "Montar ejes y ruedas asegurando alineación geométrica para movimiento rectilíneo."
+            title: "Instalar sistema de frío",
+            description: "Colocar fuente de frío en la parte superior o inferior del contenedor para enfriamiento por convección."
           },
           {
-            title: "Implementar dirección",
-            description: "Conectar eje delantero a sistema de dirección que permita control angular preciso."
+            title: "Añadir cierre",
+            description: "Instalar una tapa o puerta que se pueda cerrar herméticamente para mantener el frío interno."
           },
           {
-            title: "Integrar propulsión",
-            description: "Instalar motor eléctrico conectado al eje trasero para generar movimiento controlado."
-          },
-          {
-            title: "Añadir seguridad",
-            description: "Incorporar sistema de freno mecánico que permita detención controlada del vehículo."
-          },
-          {
-            title: "Colocar asiento",
-            description: "Fijar superficie plana que permita al operador mantener posición estable durante el uso."
+            title: "Organizar espacio",
+            description: "Agregar estantes o separadores básicos para organizar los elementos a refrigerar."
           }
         ],
-        note: "Sin carrocería, sin comodidades, sin elementos decorativos. Solo transporte funcional.",
+        note: "Sin compresor eléctrico, sin luces internas, sin dispensador. Solo refrigeración funcional básica.",
         diagram: `<svg viewBox="0 0 200 200" class="bauhaus-diagram" xmlns="http://www.w3.org/2000/svg">
-          <!-- Chasis -->
-          <rect x="30" y="80" width="140" height="20" fill="none" stroke="black" stroke-width="2"/>
-          <!-- Ruedas -->
-          <circle cx="60" cy="140" r="20" fill="none" stroke="black" stroke-width="2"/>
-          <circle cx="140" cy="140" r="20" fill="none" stroke="black" stroke-width="2"/>
-          <circle cx="60" cy="60" r="15" fill="none" stroke="black" stroke-width="2"/>
-          <circle cx="140" cy="60" r="15" fill="none" stroke="black" stroke-width="2"/>
-          <!-- Asiento -->
-          <rect x="90" y="50" width="20" height="8" fill="none" stroke="black" stroke-width="2"/>
-        </svg>`
-      },
-      "silla": {
-        materials: [
-          "Asiento plano (lámina de madera contrachapada)",
-          "Respaldar vertical (lámina rectangular)",
-          "Tres patas trianguladas (madera maciza)",
-          "Conectores metálicos"
-        ],
-        steps: [
-          {
-            title: "Crear asiento",
-            description: "Cortar lámina rectangular que proporcione superficie de apoyo mínima para el cuerpo humano sentado."
-          },
-          {
-            title: "Construir respaldo",
-            description: "Cortar lámina vertical que ofrezca soporte básico a la espalda en posición sentada."
-          },
-          {
-            title: "Diseñar base",
-            description: "Configurar tres puntos de apoyo en disposición triangular para garantizar estabilidad máxima."
-          },
-          {
-            title: "Ensamblar",
-            description: "Unir todos los elementos con conectores que aseguren la integridad estructural durante el uso."
-          }
-        ],
-        note: "Sin curvas ergonómicas, sin tapizado, sin brazos. Solo apoyo funcional.",
-        diagram: `<svg viewBox="0 0 200 200" class="bauhaus-diagram" xmlns="http://www.w3.org/2000/svg">
-          <!-- Asiento -->
-          <rect x="60" y="100" width="80" height="10" fill="none" stroke="black" stroke-width="2"/>
-          <!-- Respaldar -->
-          <rect x="95" y="40" width="10" height="60" fill="none" stroke="black" stroke-width="2"/>
-          <!-- Patas -->
-          <line x1="70" y1="110" x2="50" y2="180" stroke="black" stroke-width="2"/>
-          <line x1="130" y1="110" x2="150" y2="180" stroke="black" stroke-width="2"/>
-          <line x1="100" y1="110" x2="100" y2="180" stroke="black" stroke-width="2"/>
+          <!-- Cuerpo de la nevera -->
+          <rect x="40" y="40" width="120" height="120" fill="none" stroke="black" stroke-width="2"/>
+          <!-- Puerta -->
+          <line x1="100" y1="40" x2="100" y2="160" stroke="black" stroke-width="2"/>
+          <!-- Manija -->
+          <circle cx="130" cy="100" r="8" fill="none" stroke="black" stroke-width="2"/>
+          <!-- Hielo interno -->
+          <rect x="60" y="60" width="20" height="20" fill="#0057b8" stroke="black" stroke-width="1"/>
+          <rect x="120" y="60" width="20" height="20" fill="#0057b8" stroke="black" stroke-width="1"/>
         </svg>`
       },
       "bicicleta": {
         materials: [
           "Cuadro triangular (tubos metálicos soldados)",
           "Dos ruedas con neumáticos",
-          "Sistema de transmisión (pedales, cadena, piñón)",
+          "Sistema de transmisión (pedales, bielas, cadena, piñón)",
           "Manillar recto (barra metálica)",
           "Frenos de zapata",
           "Sillín plano"
@@ -551,43 +503,279 @@
           <line x1="115" y1="85" x2="125" y2="85" stroke="black" stroke-width="2"/>
         </svg>`
       },
-      "lámpara": {
+      "sofá": {
         materials: [
-          "Fuente de luz LED funcional",
-          "Soporte estructural mínimo",
-          "Cables eléctricos básicos",
-          "Interruptor simple",
-          "Base estable"
+          "Estructura base rígida (madera, metal o plástico reforzado)",
+          "Superficie de asiento (lámina rígida o malla tensada)",
+          "Elemento de respaldo (lámina vertical o malla)",
+          "Puntos de apoyo estables (mínimo 4 patas o base sólida)",
+          "Conectores estructurales resistentes"
         ],
         steps: [
           {
-            title: "Seleccionar fuente de luz",
-            description: "Elegir una bombilla LED que proporcione iluminación adecuada para la función requerida."
+            title: "Crear base",
+            description: "Construir una plataforma rectangular que soporte el peso de personas sentadas."
           },
           {
-            title: "Crear soporte",
-            description: "Construir una estructura mínima que posicione la fuente de luz en el lugar funcional deseado."
+            title: "Instalar respaldo",
+            description: "Fijar un elemento vertical que proporcione soporte básico a la espalda."
           },
           {
-            title: "Conectar circuito",
-            description: "Instalar cables e interruptor para permitir el control de encendido y apagado de la luz."
+            title: "Añadir patas",
+            description: "Instalar puntos de apoyo estables que mantengan el sofá en posición horizontal."
           },
           {
-            title: "Asegurar base",
-            description: "Fijar una base estable que evite caídas o volcamientos durante el uso."
+            title: "Refuerzo estructural",
+            description: "Asegurar todas las uniones para garantizar estabilidad bajo carga."
           }
         ],
-        note: "Sin pantalla decorativa, sin diseños artísticos, sin controles de intensidad. Solo iluminación funcional.",
+        note: "Sin cojines, sin tapizado, sin brazos decorativos. Solo superficie funcional para sentarse.",
         diagram: `<svg viewBox="0 0 200 200" class="bauhaus-diagram" xmlns="http://www.w3.org/2000/svg">
-          <!-- Base -->
-          <rect x="80" y="160" width="40" height="10" fill="none" stroke="black" stroke-width="2"/>
-          <!-- Soporte -->
-          <line x1="100" y1="60" x2="100" y2="160" stroke="black" stroke-width="2"/>
-          <!-- Fuente de luz -->
-          <circle cx="100" cy="50" r="12" fill="none" stroke="black" stroke-width="2"/>
-          <!-- Filamento -->
-          <line x1="95" y1="45" x2="105" y2="55" stroke="black" stroke-width="1"/>
-          <line x1="95" y1="55" x2="105" y2="45" stroke="black" stroke-width="1"/>
+          <!-- Base del sofá -->
+          <rect x="30" y="120" width="140" height="15" fill="none" stroke="black" stroke-width="2"/>
+          <!-- Respaldo -->
+          <rect x="40" y="60" width="120" height="60" fill="none" stroke="black" stroke-width="2"/>
+          <!-- Patas -->
+          <rect x="40" y="135" width="8" height="40" fill="none" stroke="black" stroke-width="2"/>
+          <rect x="80" y="135" width="8" height="40" fill="none" stroke="black" stroke-width="2"/>
+          <rect x="120" y="135" width="8" height="40" fill="none" stroke="black" stroke-width="2"/>
+          <rect x="160" y="135" width="8" height="40" fill="none" stroke="black" stroke-width="2"/>
+        </svg>`
+      },
+      "puerta": {
+        materials: [
+          "Panel rígido rectangular (madera, metal o material compuesto)",
+          "Bisagras funcionales (mínimo 2 para apertura)",
+          "Cerradura o pestillo básico (opcional según uso funcional)",
+          "Marco de apoyo estructural"
+        ],
+        steps: [
+          {
+            title: "Crear panel",
+            description: "Cortar o seleccionar un panel rectangular que cubra la abertura funcionalmente."
+          },
+          {
+            title: "Instalar bisagras",
+            description: "Fijar bisagras en el borde lateral del panel para permitir apertura y cierre."
+          },
+          {
+            title: "Montar en marco",
+            description: "Conectar las bisagras al marco estructural que rodea la abertura."
+          },
+          {
+            title: "Añadir cierre",
+            description: "Instalar sistema de cierre básico que permita mantener la puerta cerrada cuando sea necesario."
+          }
+        ],
+        note: "Sin acabados, sin manijas decorativas, sin ventanas, sin aislamiento acústico.",
+        diagram: `<svg viewBox="0 0 200 200" class="bauhaus-diagram" xmlns="http://www.w3.org/2000/svg">
+          <!-- Marco -->
+          <rect x="40" y="40" width="120" height="120" fill="none" stroke="black" stroke-width="2"/>
+          <!-- Puerta -->
+          <rect x="40" y="40" width="60" height="120" fill="none" stroke="black" stroke-width="2"/>
+          <!-- Bisagras -->
+          <circle cx="45" cy="70" r="5" fill="black"/>
+          <circle cx="45" cy="130" r="5" fill="black"/>
+          <!-- Manija -->
+          <rect x="90" y="100" width="15" height="3" fill="black"/>
+        </svg>`
+      },
+      "cama": {
+        materials: [
+          "Estructura rectangular base (madera, metal o tubo rígido)",
+          "Superficie de apoyo (láminas, malla tensada o tablas paralelas)",
+          "Puntos de apoyo estables (mínimo 4 patas o base sólida)",
+          "Conectores estructurales resistentes"
+        ],
+        steps: [
+          {
+            title: "Crear base rectangular",
+            description: "Construir un marco rectangular que defina el área de descanso funcional."
+          },
+          {
+            title: "Instalar superficie de apoyo",
+            description: "Colocar elementos que distribuyan el peso del cuerpo de manera estable."
+          },
+          {
+            title: "Añadir patas",
+            description: "Instalar puntos de apoyo que eleven la cama del suelo para uso funcional."
+          },
+          {
+            title: "Refuerzo estructural",
+            description: "Asegurar todas las uniones para garantizar estabilidad bajo carga."
+          }
+        ],
+        note: "Sin colchón, sin cabecero decorativo, sin cajones, sin acabados estéticos.",
+        diagram: `<svg viewBox="0 0 200 200" class="bauhaus-diagram" xmlns="http://www.w3.org/2000/svg">
+          <!-- Marco de la cama -->
+          <rect x="30" y="80" width="140" height="80" fill="none" stroke="black" stroke-width="2"/>
+          <!-- Láminas de apoyo -->
+          <line x1="30" y1="100" x2="170" y2="100" stroke="black" stroke-width="1"/>
+          <line x1="30" y1="120" x2="170" y2="120" stroke="black" stroke-width="1"/>
+          <line x1="30" y1="140" x2="170" y2="140" stroke="black" stroke-width="1"/>
+          <line x1="30" y1="160" x2="170" y2="160" stroke="black" stroke-width="1"/>
+          <!-- Patas -->
+          <rect x="40" y="160" width="8" height="30" fill="none" stroke="black" stroke-width="2"/>
+          <rect x="70" y="160" width="8" height="30" fill="none" stroke="black" stroke-width="2"/>
+          <rect x="132" y="160" width="8" height="30" fill="none" stroke="black" stroke-width="2"/>
+          <rect x="162" y="160" width="8" height="30" fill="none" stroke="black" stroke-width="2"/>
+        </svg>`
+      },
+      "caja": {
+        materials: [
+          "Panel inferior (lámina rígida rectangular)",
+          "4 paneles laterales (láminas rectangulares verticales)",
+          "Panel superior (opcional según función)",
+          "Conectores estructurales (clavos, tornillos o adhesivo fuerte)"
+        ],
+        steps: [
+          {
+            title: "Preparar base",
+            description: "Cortar o seleccionar un panel rectangular que sirva como fondo de la caja."
+          },
+          {
+            title: "Instalar lados",
+            description: "Fijar cuatro paneles verticales en los bordes de la base para crear las paredes laterales."
+          },
+          {
+            title: "Añadir tapa",
+            description: "Instalar un panel superior si la función requiere contención completa."
+          },
+          {
+            title: "Asegurar uniones",
+            description: "Refuerzar todas las conexiones para garantizar integridad estructural."
+          }
+        ],
+        note: "Sin decoraciones, sin asas, sin acabados. Solo contención funcional básica.",
+        diagram: `<svg viewBox="0 0 200 200" class="bauhaus-diagram" xmlns="http://www.w3.org/2000/svg">
+          <!-- Caja 3D -->
+          <rect x="60" y="80" width="80" height="80" fill="none" stroke="black" stroke-width="2"/>
+          <!-- Tapa -->
+          <rect x="60" y="80" width="80" height="20" fill="none" stroke="black" stroke-width="2"/>
+          <!-- Lados -->
+          <line x1="60" y1="80" x2="40" y2="60" stroke="black" stroke-width="2"/>
+          <line x1="140" y1="80" x2="120" y2="60" stroke="black" stroke-width="2"/>
+          <line x1="60" y1="160" x2="40" y2="140" stroke="black" stroke-width="2"/>
+          <line x1="140" y1="160" x2="120" y2="140" stroke="black" stroke-width="2"/>
+          <!-- Tapa superior -->
+          <rect x="40" y="60" width="80" height="20" fill="none" stroke="black" stroke-width="2"/>
+        </svg>`
+      },
+      "cajones": {
+        materials: [
+          "Panel inferior (lámina rectangular)",
+          "2 paneles laterales (láminas verticales)",
+          "Panel frontal (lámina vertical con agarre funcional)",
+          "Panel trasero (lámina vertical)",
+          "Rieles deslizantes funcionales (madera, metal o plástico rígido)"
+        ],
+        steps: [
+          {
+            title: "Crear caja del cajón",
+            description: "Ensamblar los cinco paneles para formar una caja rectangular abierta en la parte superior."
+          },
+          {
+            title: "Instalar rieles",
+            description: "Fijar rieles deslizantes en los laterales internos del mueble donde irá el cajón."
+          },
+          {
+            title: "Montar cajón",
+            description: "Conectar los rieles del cajón a los rieles del mueble para permitir deslizamiento suave."
+          },
+          {
+            title: "Verificar funcionamiento",
+            description: "Probar que el cajón se desliza sin atascarse y mantiene su posición cuando está cerrado."
+          }
+        ],
+        note: "Sin tiradores decorativos, sin acabados, sin divisiones internas. Solo almacenamiento funcional.",
+        diagram: `<svg viewBox="0 0 200 200" class="bauhaus-diagram" xmlns="http://www.w3.org/2000/svg">
+          <!-- Mueble exterior -->
+          <rect x="40" y="60" width="120" height="100" fill="none" stroke="black" stroke-width="2"/>
+          <!-- Cajón -->
+          <rect x="50" y="90" width="100" height="40" fill="none" stroke="black" stroke-width="2"/>
+          <!-- Rieles -->
+          <line x1="50" y1="95" x2="150" y2="95" stroke="black" stroke-width="1" stroke-dasharray="5,5"/>
+          <line x1="50" y1="125" x2="150" y2="125" stroke="black" stroke-width="1" stroke-dasharray="5,5"/>
+          <!-- Agarre -->
+          <rect x="130" y="105" width="15" height="5" fill="black"/>
+        </svg>`
+      },
+      "armario": {
+        materials: [
+          "Estructura rectangular (paneles laterales, superior e inferior)",
+          "Puertas funcionales (paneles con bisagras o correderas)",
+          "Elementos internos (barras para colgar, estantes básicos)",
+          "Puntos de apoyo estables (base o patas)",
+          "Conectores estructurales resistentes"
+        ],
+        steps: [
+          {
+            title: "Construir carcasa",
+            description: "Ensamblar los paneles que forman la estructura principal del armario."
+          },
+          {
+            title: "Instalar puertas",
+            description: "Montar puertas con sistema de apertura funcional (bisagras o rieles)."
+          },
+          {
+            title: "Añadir elementos internos",
+            description: "Instalar barras y estantes básicos que permitan organizar la ropa funcionalmente."
+          },
+          {
+            title: "Asegurar estabilidad",
+            description: "Fijar la base o patas y verificar que el armario no se vuelque bajo carga."
+          }
+        ],
+        note: "Sin espejos, sin acabados decorativos, sin iluminación interna. Solo almacenamiento funcional de ropa.",
+        diagram: `<svg viewBox="0 0 200 200" class="bauhaus-diagram" xmlns="http://www.w3.org/2000/svg">
+          <!-- Carcasa del armario -->
+          <rect x="30" y="40" width="140" height="140" fill="none" stroke="black" stroke-width="2"/>
+          <!-- Puertas -->
+          <line x1="100" y1="40" x2="100" y2="180" stroke="black" stroke-width="2"/>
+          <!-- Manijas -->
+          <circle cx="70" cy="110" r="5" fill="black"/>
+          <circle cx="130" cy="110" r="5" fill="black"/>
+          <!-- Barra para colgar -->
+          <line x1="40" y1="80" x2="160" y2="80" stroke="black" stroke-width="2"/>
+          <!-- Estante -->
+          <line x1="40" y1="140" x2="160" y2="140" stroke="black" stroke-width="2"/>
+        </svg>`
+      },
+      "silla": {
+        materials: [
+          "Asiento plano (lámina de madera contrachapada, plástico o metal)",
+          "Respaldar vertical (lámina rectangular)",
+          "Tres patas trianguladas (madera maciza o tubo metálico)",
+          "Conectores metálicos"
+        ],
+        steps: [
+          {
+            title: "Crear asiento",
+            description: "Cortar lámina rectangular que proporcione superficie de apoyo mínima para el cuerpo humano sentado."
+          },
+          {
+            title: "Construir respaldo",
+            description: "Cortar lámina vertical que ofrezca soporte básico a la espalda en posición sentada."
+          },
+          {
+            title: "Diseñar base",
+            description: "Configurar tres puntos de apoyo en disposición triangular para garantizar estabilidad máxima."
+          },
+          {
+            title: "Ensamblar",
+            description: "Unir todos los elementos con conectores que aseguren la integridad estructural durante el uso."
+          }
+        ],
+        note: "Sin curvas ergonómicas, sin tapizado, sin brazos. Solo apoyo funcional.",
+        diagram: `<svg viewBox="0 0 200 200" class="bauhaus-diagram" xmlns="http://www.w3.org/2000/svg">
+          <!-- Asiento -->
+          <rect x="60" y="100" width="80" height="10" fill="none" stroke="black" stroke-width="2"/>
+          <!-- Respaldar -->
+          <rect x="95" y="40" width="10" height="60" fill="none" stroke="black" stroke-width="2"/>
+          <!-- Patas -->
+          <line x1="70" y1="110" x2="50" y2="180" stroke="black" stroke-width="2"/>
+          <line x1="130" y1="110" x2="150" y2="180" stroke="black" stroke-width="2"/>
+          <line x1="100" y1="110" x2="100" y2="180" stroke="black" stroke-width="2"/>
         </svg>`
       }
     };
@@ -597,12 +785,12 @@
     const sendBtn = document.getElementById('sendBtn');
 
     // Mensaje de bienvenida
-    function addMessage(text, isUser = false) {
+    function addMessage(text, isUser = false, isSafety = false) {
       const messageDiv = document.createElement('div');
-      messageDiv.className = `message ${isUser ? 'user' : 'bauai'}`;
+      messageDiv.className = `message ${isUser ? 'user' : 'bauai'} ${isSafety ? 'safety-message' : ''}`;
       
       if (!isUser) {
-        // Añadir avatar de HausAI (exactamente como en la imagen)
+        // Añadir avatar de HausAI
         const avatarContainer = document.createElement('div');
         avatarContainer.className = 'avatar-container';
         
@@ -612,8 +800,7 @@
         hausaiAvatar.setAttribute('width', '100%');
         hausaiAvatar.setAttribute('height', '100%');
         
-        // Crear el SVG exacto como en la imagen
-        // Fondo negro
+        // SVG del avatar (mismo que en el logo)
         const circleBg = document.createElementNS("http://www.w3.org/2000/svg", "circle");
         circleBg.setAttribute('cx', '50');
         circleBg.setAttribute('cy', '50');
@@ -621,7 +808,6 @@
         circleBg.setAttribute('fill', 'black');
         hausaiAvatar.appendChild(circleBg);
         
-        // Círculo blanco exterior
         const circleWhite = document.createElementNS("http://www.w3.org/2000/svg", "circle");
         circleWhite.setAttribute('cx', '50');
         circleWhite.setAttribute('cy', '50');
@@ -631,7 +817,6 @@
         circleWhite.setAttribute('stroke-width', '2');
         hausaiAvatar.appendChild(circleWhite);
         
-        // Parte inferior negra
         const rectBottom = document.createElementNS("http://www.w3.org/2000/svg", "rect");
         rectBottom.setAttribute('x', '2');
         rectBottom.setAttribute('y', '60');
@@ -640,19 +825,17 @@
         rectBottom.setAttribute('fill', 'black');
         hausaiAvatar.appendChild(rectBottom);
         
-        // Líneas diagonales izquierda
         for (let i = 0; i < 3; i++) {
           const line = document.createElementNS("http://www.w3.org/2000/svg", "line");
-          line.setAttribute('x1', '10 + ' + (i * 2));
-          line.setAttribute('y1', '20 + ' + (i * 2));
-          line.setAttribute('x2', '25 + ' + (i * 2));
-          line.setAttribute('y2', '35 + ' + (i * 2));
+          line.setAttribute('x1', 10 + (i * 2));
+          line.setAttribute('y1', 20 + (i * 2));
+          line.setAttribute('x2', 25 + (i * 2));
+          line.setAttribute('y2', 35 + (i * 2));
           line.setAttribute('stroke', 'black');
           line.setAttribute('stroke-width', '2');
           hausaiAvatar.appendChild(line);
         }
         
-        // Línea vertical central
         const lineVertical = document.createElementNS("http://www.w3.org/2000/svg", "line");
         lineVertical.setAttribute('x1', '50');
         lineVertical.setAttribute('y1', '10');
@@ -662,7 +845,6 @@
         lineVertical.setAttribute('stroke-width', '2');
         hausaiAvatar.appendChild(lineVertical);
         
-        // Círculo negro en la parte superior derecha
         const circleTopRight = document.createElementNS("http://www.w3.org/2000/svg", "circle");
         circleTopRight.setAttribute('cx', '70');
         circleTopRight.setAttribute('cy', '20');
@@ -670,7 +852,6 @@
         circleTopRight.setAttribute('fill', 'black');
         hausaiAvatar.appendChild(circleTopRight);
         
-        // Círculo negro en la parte media izquierda
         const circleMiddleLeft = document.createElementNS("http://www.w3.org/2000/svg", "circle");
         circleMiddleLeft.setAttribute('cx', '30');
         circleMiddleLeft.setAttribute('cy', '35');
@@ -678,25 +859,21 @@
         circleMiddleLeft.setAttribute('fill', 'black');
         hausaiAvatar.appendChild(circleMiddleLeft);
         
-        // Semicírculo azul en la parte inferior izquierda
         const pathBlue = document.createElementNS("http://www.w3.org/2000/svg", "path");
         pathBlue.setAttribute('d', 'M20,60 A30,30 0 0,1 50,60 L50,90 L20,90 Z');
         pathBlue.setAttribute('fill', '#0057b8');
         hausaiAvatar.appendChild(pathBlue);
         
-        // Semicírculo rojo en el centro
         const pathRed = document.createElementNS("http://www.w3.org/2000/svg", "path");
         pathRed.setAttribute('d', 'M50,60 A30,30 0 0,1 80,60 L80,90 L50,90 Z');
         pathRed.setAttribute('fill', '#d90000');
         hausaiAvatar.appendChild(pathRed);
         
-        // Semicírculo amarillo en la parte derecha
         const pathYellow = document.createElementNS("http://www.w3.org/2000/svg", "path");
         pathYellow.setAttribute('d', 'M80,10 A30,30 0 0,1 80,60 L80,90 L100,90 L100,10 Z');
         pathYellow.setAttribute('fill', '#ffd700');
         hausaiAvatar.appendChild(pathYellow);
         
-        // Círculo rojo dentro del azul
         const circleRedInsideBlue = document.createElementNS("http://www.w3.org/2000/svg", "circle");
         circleRedInsideBlue.setAttribute('cx', '35');
         circleRedInsideBlue.setAttribute('cy', '75');
@@ -704,31 +881,28 @@
         circleRedInsideBlue.setAttribute('fill', '#d90000');
         hausaiAvatar.appendChild(circleRedInsideBlue);
         
-        // Líneas horizontales en el semicírculo rojo
         for (let i = 0; i < 3; i++) {
           const line = document.createElementNS("http://www.w3.org/2000/svg", "line");
           line.setAttribute('x1', '55');
-          line.setAttribute('y1', '40 + ' + (i * 5));
+          line.setAttribute('y1', 40 + (i * 5));
           line.setAttribute('x2', '75');
-          line.setAttribute('y2', '40 + ' + (i * 5));
+          line.setAttribute('y2', 40 + (i * 5));
           line.setAttribute('stroke', 'black');
           line.setAttribute('stroke-width', '2');
           hausaiAvatar.appendChild(line);
         }
         
-        // Líneas horizontales en el semicírculo amarillo
         for (let i = 0; i < 3; i++) {
           const line = document.createElementNS("http://www.w3.org/2000/svg", "line");
           line.setAttribute('x1', '85');
-          line.setAttribute('y1', '25 + ' + (i * 5));
+          line.setAttribute('y1', 25 + (i * 5));
           line.setAttribute('x2', '95');
-          line.setAttribute('y2', '25 + ' + (i * 5));
+          line.setAttribute('y2', 25 + (i * 5));
           line.setAttribute('stroke', 'black');
           line.setAttribute('stroke-width', '2');
           hausaiAvatar.appendChild(line);
         }
         
-        // Arco en la parte inferior derecha
         const pathArc = document.createElementNS("http://www.w3.org/2000/svg", "path");
         pathArc.setAttribute('d', 'M80,80 Q90,75 100,80');
         pathArc.setAttribute('fill', 'none');
@@ -749,11 +923,11 @@
       messagesDiv.scrollTop = messagesDiv.scrollHeight;
     }
 
-    function addHTMLMessage(html) {
+    function addHTMLMessage(html, isSafety = false) {
       const messageDiv = document.createElement('div');
-      messageDiv.className = 'message bauai';
+      messageDiv.className = `message bauai ${isSafety ? 'safety-message' : ''}`;
       
-      // Añadir avatar de HausAI (exactamente como en la imagen)
+      // Añadir avatar de HausAI
       const avatarContainer = document.createElement('div');
       avatarContainer.className = 'avatar-container';
       
@@ -763,8 +937,7 @@
       hausaiAvatar.setAttribute('width', '100%');
       hausaiAvatar.setAttribute('height', '100%');
       
-      // Crear el SVG exacto como en la imagen
-      // Fondo negro
+      // SVG del avatar (mismo que en el logo)
       const circleBg = document.createElementNS("http://www.w3.org/2000/svg", "circle");
       circleBg.setAttribute('cx', '50');
       circleBg.setAttribute('cy', '50');
@@ -772,7 +945,6 @@
       circleBg.setAttribute('fill', 'black');
       hausaiAvatar.appendChild(circleBg);
       
-      // Círculo blanco exterior
       const circleWhite = document.createElementNS("http://www.w3.org/2000/svg", "circle");
       circleWhite.setAttribute('cx', '50');
       circleWhite.setAttribute('cy', '50');
@@ -782,7 +954,6 @@
       circleWhite.setAttribute('stroke-width', '2');
       hausaiAvatar.appendChild(circleWhite);
       
-      // Parte inferior negra
       const rectBottom = document.createElementNS("http://www.w3.org/2000/svg", "rect");
       rectBottom.setAttribute('x', '2');
       rectBottom.setAttribute('y', '60');
@@ -791,19 +962,17 @@
       rectBottom.setAttribute('fill', 'black');
       hausaiAvatar.appendChild(rectBottom);
       
-      // Líneas diagonales izquierda
       for (let i = 0; i < 3; i++) {
         const line = document.createElementNS("http://www.w3.org/2000/svg", "line");
-        line.setAttribute('x1', '10 + ' + (i * 2));
-        line.setAttribute('y1', '20 + ' + (i * 2));
-        line.setAttribute('x2', '25 + ' + (i * 2));
-        line.setAttribute('y2', '35 + ' + (i * 2));
+        line.setAttribute('x1', 10 + (i * 2));
+        line.setAttribute('y1', 20 + (i * 2));
+        line.setAttribute('x2', 25 + (i * 2));
+        line.setAttribute('y2', 35 + (i * 2));
         line.setAttribute('stroke', 'black');
         line.setAttribute('stroke-width', '2');
         hausaiAvatar.appendChild(line);
       }
       
-      // Línea vertical central
       const lineVertical = document.createElementNS("http://www.w3.org/2000/svg", "line");
       lineVertical.setAttribute('x1', '50');
       lineVertical.setAttribute('y1', '10');
@@ -813,7 +982,6 @@
       lineVertical.setAttribute('stroke-width', '2');
       hausaiAvatar.appendChild(lineVertical);
       
-      // Círculo negro en la parte superior derecha
       const circleTopRight = document.createElementNS("http://www.w3.org/2000/svg", "circle");
       circleTopRight.setAttribute('cx', '70');
       circleTopRight.setAttribute('cy', '20');
@@ -821,7 +989,6 @@
       circleTopRight.setAttribute('fill', 'black');
       hausaiAvatar.appendChild(circleTopRight);
       
-      // Círculo negro en la parte media izquierda
       const circleMiddleLeft = document.createElementNS("http://www.w3.org/2000/svg", "circle");
       circleMiddleLeft.setAttribute('cx', '30');
       circleMiddleLeft.setAttribute('cy', '35');
@@ -829,25 +996,21 @@
       circleMiddleLeft.setAttribute('fill', 'black');
       hausaiAvatar.appendChild(circleMiddleLeft);
       
-      // Semicírculo azul en la parte inferior izquierda
       const pathBlue = document.createElementNS("http://www.w3.org/2000/svg", "path");
       pathBlue.setAttribute('d', 'M20,60 A30,30 0 0,1 50,60 L50,90 L20,90 Z');
       pathBlue.setAttribute('fill', '#0057b8');
       hausaiAvatar.appendChild(pathBlue);
       
-      // Semicírculo rojo en el centro
       const pathRed = document.createElementNS("http://www.w3.org/2000/svg", "path");
       pathRed.setAttribute('d', 'M50,60 A30,30 0 0,1 80,60 L80,90 L50,90 Z');
       pathRed.setAttribute('fill', '#d90000');
       hausaiAvatar.appendChild(pathRed);
       
-      // Semicírculo amarillo en la parte derecha
       const pathYellow = document.createElementNS("http://www.w3.org/2000/svg", "path");
       pathYellow.setAttribute('d', 'M80,10 A30,30 0 0,1 80,60 L80,90 L100,90 L100,10 Z');
       pathYellow.setAttribute('fill', '#ffd700');
       hausaiAvatar.appendChild(pathYellow);
       
-      // Círculo rojo dentro del azul
       const circleRedInsideBlue = document.createElementNS("http://www.w3.org/2000/svg", "circle");
       circleRedInsideBlue.setAttribute('cx', '35');
       circleRedInsideBlue.setAttribute('cy', '75');
@@ -855,31 +1018,28 @@
       circleRedInsideBlue.setAttribute('fill', '#d90000');
       hausaiAvatar.appendChild(circleRedInsideBlue);
       
-      // Líneas horizontales en el semicírculo rojo
       for (let i = 0; i < 3; i++) {
         const line = document.createElementNS("http://www.w3.org/2000/svg", "line");
         line.setAttribute('x1', '55');
-        line.setAttribute('y1', '40 + ' + (i * 5));
+        line.setAttribute('y1', 40 + (i * 5));
         line.setAttribute('x2', '75');
-        line.setAttribute('y2', '40 + ' + (i * 5));
+        line.setAttribute('y2', 40 + (i * 5));
         line.setAttribute('stroke', 'black');
         line.setAttribute('stroke-width', '2');
         hausaiAvatar.appendChild(line);
       }
       
-      // Líneas horizontales en el semicírculo amarillo
       for (let i = 0; i < 3; i++) {
         const line = document.createElementNS("http://www.w3.org/2000/svg", "line");
         line.setAttribute('x1', '85');
-        line.setAttribute('y1', '25 + ' + (i * 5));
+        line.setAttribute('y1', 25 + (i * 5));
         line.setAttribute('x2', '95');
-        line.setAttribute('y2', '25 + ' + (i * 5));
+        line.setAttribute('y2', 25 + (i * 5));
         line.setAttribute('stroke', 'black');
         line.setAttribute('stroke-width', '2');
         hausaiAvatar.appendChild(line);
       }
       
-      // Arco en la parte inferior derecha
       const pathArc = document.createElementNS("http://www.w3.org/2000/svg", "path");
       pathArc.setAttribute('d', 'M80,80 Q90,75 100,80');
       pathArc.setAttribute('fill', 'none');
@@ -917,6 +1077,7 @@
     function findBestMatch(input) {
       const normalized = normalizeInput(input);
       
+      // Buscar coincidencias exactas y parciales
       if (knowledgeBase[normalized]) {
         return normalized;
       }
@@ -930,55 +1091,6 @@
       return null;
     }
 
-    // Generar respuesta genérica para cualquier producto
-    function generateGenericResponse(productName) {
-      // Materiales generales
-      const genericMaterials = [
-        `Superficie estructural básica (material apropiado para la función)`,
-        `Elementos de soporte o conexión (para mantener integridad estructural)`,
-        `Componentes funcionales esenciales (sin elementos decorativos)`
-      ];
-      
-      // Pasos generales
-      const genericSteps = [
-        {
-          title: "Definir función principal",
-          description: `Identificar el propósito fundamental de ${productName} para determinar los componentes esenciales.`
-        },
-        {
-          title: "Seleccionar materiales",
-          description: `Elegir materiales que cumplan con la función sin excederse en características no necesarias.`
-        },
-        {
-          title: "Ensamblar componentes",
-          description: `Conectar los elementos de manera que se logre la funcionalidad mínima requerida.`
-        },
-        {
-          title: "Verificar funcionalidad",
-          description: `Probar que ${productName} cumple con su propósito básico sin elementos innecesarios.`
-        }
-      ];
-      
-      // Nota general
-      const genericNote = "Sin elementos estéticos, decorativos o de confort. Solo lo necesario para que funcione.";
-      
-      // Diagrama genérico
-      const genericDiagram = `<svg viewBox="0 0 200 200" class="bauhaus-diagram" xmlns="http://www.w3.org/2000/svg">
-        <!-- Representación genérica -->
-        <rect x="50" y="80" width="100" height="20" fill="none" stroke="black" stroke-width="2"/>
-        <circle cx="70" cy="120" r="15" fill="none" stroke="black" stroke-width="2"/>
-        <circle cx="130" cy="120" r="15" fill="none" stroke="black" stroke-width="2"/>
-        <line x1="100" y1="80" x2="100" y2="100" stroke="black" stroke-width="2"/>
-      </svg>`;
-      
-      return {
-        materials: genericMaterials,
-        steps: genericSteps,
-        note: genericNote,
-        diagram: genericDiagram
-      };
-    }
-
     function sendMessage() {
       const message = userInput.value.trim();
       if (!message) return;
@@ -989,49 +1101,115 @@
       
       // Procesar respuesta
       setTimeout(() => {
-        const matchedKey = findBestMatch(message);
-        
-        let productInfo;
-        
-        if (matchedKey) {
-          // Si encontramos un producto predefinido
-          productInfo = knowledgeBase[matchedKey];
-        } else {
-          // Si no encontramos coincidencia exacta, generamos una respuesta genérica
-          productInfo = generateGenericResponse(message);
+        // Verificar si es una solicitud peligrosa
+        if (isDangerousRequest(message)) {
+          addMessage("Soy incapaz de dar información para la construcción de objetos que no tienen una función más allá de lastimar a otros.", false, true);
+          return;
         }
         
-        // Mostrar respuesta conversacional
-        let response = `Construcción funcional de ${message}:\n\n`;
+        // Buscar en la base de conocimiento
+        const matchedKey = findBestMatch(message);
         
-        response += "Materiales esenciales:\n";
-        productInfo.materials.forEach(material => {
-          response += `— ${material}\n`;
-        });
-        
-        response += "\nPaso a paso:\n";
-        productInfo.steps.forEach((step, index) => {
-          response += `${index + 1}. ${step.title}: ${step.description}\n`;
-        });
-        
-        response += `\nNota: ${productInfo.note}`;
-        
-        addMessage(response);
-        
-        // Mostrar diagrama funcional
-        const diagramHTML = `
-          <div class="diagram-container">
-            <div class="diagram-title">Diagrama funcional: ${message}</div>
-            ${productInfo.diagram}
-            <p style="font-weight:300;font-size:0.9rem;margin-top:10px;">
-              Geometría esencial para la función. Sin elementos decorativos.
-            </p>
-          </div>
-        `;
-        addHTMLMessage(diagramHTML);
-        
-        // Mostrar formato visual mejorado
-        showVisualConstruction(message, productInfo);
+        if (matchedKey) {
+          // Usar la información específica del objeto
+          const productInfo = knowledgeBase[matchedKey];
+          
+          // Mostrar respuesta conversacional
+          let response = `Construcción funcional de ${matchedKey}:\n\n`;
+          
+          response += "Materiales esenciales:\n";
+          productInfo.materials.forEach(material => {
+            response += `— ${material}\n`;
+          });
+          
+          response += "\nPaso a paso:\n";
+          productInfo.steps.forEach((step, index) => {
+            response += `${index + 1}. ${step.title}: ${step.description}\n`;
+          });
+          
+          response += `\nNota: ${productInfo.note}`;
+          
+          addMessage(response);
+          
+          // Mostrar diagrama funcional
+          const diagramHTML = `
+            <div class="diagram-container">
+              <div class="diagram-title">Diagrama funcional: ${matchedKey}</div>
+              ${productInfo.diagram}
+              <p style="font-weight:300;font-size:0.9rem;margin-top:10px;">
+                Geometría esencial para la función. Sin elementos decorativos.
+              </p>
+            </div>
+          `;
+          addHTMLMessage(diagramHTML);
+          
+          // Mostrar formato visual mejorado
+          showVisualConstruction(matchedKey, productInfo);
+        } else {
+          // Respuesta genérica para objetos no predefinidos
+          const genericResponse = {
+            materials: [
+              `Superficie estructural básica (material apropiado para la función de ${message})`,
+              `Elementos de soporte o conexión (para mantener integridad estructural)`,
+              `Componentes funcionales esenciales (sin elementos decorativos)`
+            ],
+            steps: [
+              {
+                title: "Definir función principal",
+                description: `Identificar el propósito fundamental de ${message} para determinar los componentes esenciales.`
+              },
+              {
+                title: "Seleccionar materiales",
+                description: `Elegir materiales que cumplan con la función sin excederse en características no necesarias.`
+              },
+              {
+                title: "Ensamblar componentes",
+                description: `Conectar los elementos de manera que se logre la funcionalidad mínima requerida.`
+              },
+              {
+                title: "Verificar funcionalidad",
+                description: `Probar que ${message} cumple con su propósito básico sin elementos innecesarios.`
+              }
+            ],
+            note: "Sin elementos estéticos, decorativos o de confort. Solo lo necesario para que funcione.",
+            diagram: `<svg viewBox="0 0 200 200" class="bauhaus-diagram" xmlns="http://www.w3.org/2000/svg">
+              <!-- Representación genérica -->
+              <rect x="50" y="80" width="100" height="20" fill="none" stroke="black" stroke-width="2"/>
+              <circle cx="70" cy="120" r="15" fill="none" stroke="black" stroke-width="2"/>
+              <circle cx="130" cy="120" r="15" fill="none" stroke="black" stroke-width="2"/>
+              <line x1="100" y1="80" x2="100" y2="100" stroke="black" stroke-width="2"/>
+            </svg>`
+          };
+          
+          let response = `Construcción funcional de ${message}:\n\n`;
+          
+          response += "Materiales esenciales:\n";
+          genericResponse.materials.forEach(material => {
+            response += `— ${material}\n`;
+          });
+          
+          response += "\nPaso a paso:\n";
+          genericResponse.steps.forEach((step, index) => {
+            response += `${index + 1}. ${step.title}: ${step.description}\n`;
+          });
+          
+          response += `\nNota: ${genericResponse.note}`;
+          
+          addMessage(response);
+          
+          const diagramHTML = `
+            <div class="diagram-container">
+              <div class="diagram-title">Diagrama funcional: ${message}</div>
+              ${genericResponse.diagram}
+              <p style="font-weight:300;font-size:0.9rem;margin-top:10px;">
+                Geometría esencial para la función. Sin elementos decorativos.
+              </p>
+            </div>
+          `;
+          addHTMLMessage(diagramHTML);
+          
+          showVisualConstruction(message, genericResponse);
+        }
       }, 500);
     }
 
@@ -1095,5 +1273,3 @@
   </script>
 </body>
 </html>
-
-
